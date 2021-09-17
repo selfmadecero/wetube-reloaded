@@ -3,8 +3,14 @@ html(lang="ko")
     head 
         title #{pageTitle} | WeTube
         link(rel="stylesheet" href="https://unpkg.com/mvp.css")
-    body 
+    body
+        header 
+            h1=pageTitle
+            nav
+                ul 
+                    li 
+                        a(href="/videos/upload") Upload Video
         main
             block content
-            button send
-    include partials/footer.pug
+            
+    include partials/footer
